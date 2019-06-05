@@ -1,0 +1,16 @@
+
+{
+    "name": "Gerador de UUID",
+    "description": "Gerador de UUID sem frescura",
+    "image": "heroku/python",
+    "repository": "https://github.com/leonardocintra/generate-uuid",
+    "keywords": ["python", "django" ],
+    "addons": [ "heroku-postgresql" ],
+    "environments": {
+      "test": {
+        "scripts": {
+          "test-setup": "python manage.py collectstatic --noinput"
+        }
+      }
+    }
+  }
