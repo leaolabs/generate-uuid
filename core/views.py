@@ -6,7 +6,6 @@ import uuid
 class IndexView(TemplateView):
     template_name = "core/index.html"
     title = "UUID Easy"
-
     
     list_uuid = []
     count = 0
