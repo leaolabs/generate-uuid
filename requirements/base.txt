@@ -2,3 +2,4 @@ dj-database-url
 dj-static
 django
 gunicorn
+pyperclip
