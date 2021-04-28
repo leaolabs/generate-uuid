@@ -93,7 +93,13 @@
                     <div class="col align-self-center">
                         <h1>{{ view.title }}</h1>
                         <div class="alert alert-secondary" role="alert">
-                            Press <span class="badge badge-secondary">F5</span> 2x to re-generate uuid
+                            <form>
+                                <button type="submit" class="btn btn-warning" onclick="window.location.reload();">Gerar novos UUIDs</button>
+                            </form>
+                        </div>
+                        <div class="alert alert-danger" role="alert">
+                            Todos os uuid ja estão na sua área de transferencia. Basta dar CTRL + V ou selecinar o UUID
+                            abaixo desejado
                         </div>
 
                         <div class="list-group">
@@ -101,6 +107,17 @@
                             <button id="{{ item }}" onclick="myFunction('{{ item }}')" value="{{ item }}"
                                 class="list-group-item list-group-item-action">{{ item }}</button>
                             {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="col align-self-center">
+                        <h1>Tutorial</h1>
+                        <div class="alert alert-success" role="alert">
+                            <h4 class="alert-heading">Como usar</h4>
+                            <p>Quando você acessa nossa pagina, os 20 UUIDs gerados ja estao na memoria do seu CTRL + C.</p>
+                            <hr>
+                            <p class="mb-0">Se voce precisar de apenas 1 UUID por vez, basta clicar no UUID que automaticamente vai pra sua CTRL + C</p>
                         </div>
                     </div>
                 </div>
