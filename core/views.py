@@ -19,7 +19,7 @@ class IndexView(TemplateView):
     list_uuid = []
     count = 0
 
-    while count < 20:
+    while count < 400:
         list_uuid.append(uuid.uuid4())
         count += 1
     
