@@ -97,11 +97,6 @@
                                 <button type="submit" class="btn btn-warning" onclick="window.location.reload();">Gerar novos UUIDs</button>
                             </form>
                         </div>
-                        <div class="alert alert-danger" role="alert">
-                            Todos os uuid ja estão na sua área de transferencia. Basta dar CTRL + V ou selecinar o UUID
-                            abaixo desejado
-                        </div>
-
                         <div class="list-group">
                             {% for item in view.list_uuid %}
                             <button id="{{ item }}" onclick="myFunction('{{ item }}')" value="{{ item }}"
@@ -115,9 +110,9 @@
                         <h1>Tutorial</h1>
                         <div class="alert alert-success" role="alert">
                             <h4 class="alert-heading">Como usar</h4>
-                            <p>Quando você acessa nossa pagina, os 20 UUIDs gerados ja estao na memoria do seu CTRL + C.</p>
+                            <p>Basta clicar no UUID ao lado que ele ja automaticamente esta no seu CTRL + V</p>
                             <hr>
-                            <p class="mb-0">Se voce precisar de apenas 1 UUID por vez, basta clicar no UUID que automaticamente vai pra sua CTRL + C</p>
+                            <p class="mb-0">Melhorias é baixar essa lista. Nos ajude clicando no Github no meu superior</p>
                         </div>
                     </div>
                 </div>
